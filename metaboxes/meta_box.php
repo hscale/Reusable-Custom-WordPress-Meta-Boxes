@@ -57,7 +57,7 @@ function custom_meta_box_field( $field, $meta = null, $repeatable = null ) {
 		break;
 		// editor
 		case 'editor':
-			echo wp_editor( $meta, $id, $settings ) . '<br />' . $desc;
+			echo wp_editor( $meta, $name, $settings ) . '<br />' . $desc;// not $id , change to $name for work with repeatable fields
 		break;
 		// checkbox
 		case 'checkbox':
